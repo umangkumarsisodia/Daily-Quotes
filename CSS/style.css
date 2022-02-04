@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Dongle:wght@300&family=Lato&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Dongle:wght@300&family=Lato&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=PT+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    background-color: #022847;
+}
+
+.card-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
+    height: 80vh;
+    background-color: #3e9ae6;
+    box-shadow: 2px 2px 20px 2px #3e9ae6;
+}
+
+.card-3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 44vw;
+    height: 60vh;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 20px 2px grey;
+    overflow: hidden;
+}
+
+#tweetMe {
+    position: absolute;
+    top:0.5rem;
+    right:0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(67, 67, 238);
+}
+
+.leftQuote {
+    position: absolute;
+    top:4rem;
+    left:2rem;
+    color: gray;
+}
+
+.quote {
+    font-size: 2rem;
+    color: gray;
+    font-family: 'Yellowtail', cursive;
+}
+
+.quote-writer {
+    position: absolute;
+    bottom : 6rem;
+    right: 2.5rem;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Yellowtail', cursive;
+}
+
+#btn {
+    position: absolute;
+    width: 44vw;
+    bottom: 0;
+    border: none;
+    padding: 1rem;
+    background-color: rgb(40, 40, 211);
+    cursor: pointer;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+#tweetMe:hover {
+    animation: rotation 1s 1 linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:1014px) {
+    .quote {
+        font-size: 1.5rem;
+    }
+
+    .quote-writer, #btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:795px) {
+    .quote {
+        font-size: 1rem;
+    }
+
+    .quote-writer, #btn {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .quote {
+        font-size: 0.8rem;
+    }
+
+    .quote-writer, #btn {
+        font-size: 0.5rem;
+    }
+}
